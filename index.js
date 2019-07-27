@@ -16,6 +16,9 @@ const app = new Vue({
         },
         editarEjercicio: function(index){
             this.ejercicios[index].estado = true;
-        }
+        },
+        eliminar: function(index){
+            this.ejercicios.splice(index, 1);
+        },
     },
 })
