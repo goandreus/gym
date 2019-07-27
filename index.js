@@ -13,6 +13,9 @@ const app = new Vue({
           });
             console.log(this.ejercicios)
             this.nuevoEjercicio = ''
+        },
+        editarEjercicio: function(index){
+            this.ejercicios[index].estado = true;
         }
     },
 })
